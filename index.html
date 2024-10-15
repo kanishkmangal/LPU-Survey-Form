@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey-Form</title>
+        <link rel="stylesheet" href="styles.css" >
+    </head>
+    <body>
+    <main>
+        <div class="top">
+            <div class="heading">
+                
+                <h1 id="title">Survey-Form</h1>
+            </div>
+            <div class="about">
+                <p id="description">We are conducting a survey on the honest review of LPU.</p>
+            </div>
+        </div>
+        <form id="survey-form">
+            <div class="enter">
+                <fieldset>
+                    <label for="name" id="name-label" >Enter Your Name: <input type="'text" id="name" placeholder="your name" required></label>
+                    <label for="email" id="email-label">Enter Your email: <input id="email" type="email" placeholder="your email" required></label>
+                    <label for="number" id="number-label">Enter Your Age: <input id="number" type="number" min="18" max="25" placeholder="your age" required></label>
+                    <label>Branch: <select id="dropdown">
+                        <option>Select one</option>
+                        <option>IT</option>
+                        <option>CSE</option>
+                        <option>Others</option>
+                    </fieldset>
+                    <fieldset>
+                        <h4>Choose if you are from CSE branch</h4>
+                        <label for="group" ><input type="radio" id="group" name="branch" >CSE-A</label>
+                        <label for="grp"><input type="radio" id="grp" name="branch" >CSE-B</label>
+                    </fieldset>
+                    <fieldset required>
+                        <h4>Choose from the options that you think LPU have the best.</h4>
+                        <label for="checkbox"><input type="checkbox" id="checkbox" value="0" >Wi-fi</label>
+                        <label><input type="checkbox" id="checkbox" value="1">sports</label>
+                        <label><input type="checkbox" id="checkbox" value="2">Tech fest</label>
+                        <label><input type="checkbox" id="checkbox" value="2">Facilities</label>
+                    </div>
+                    <div class="write">
+<div class="text">
+    <label>Write: <textarea placeholder="Additional about LPU"></textarea></fieldset>
+    </div>
+    <div class="submit">
+
+        <label for="submit"><input id="submit" type="submit"></label>
+    </div>
+                        </div>
+        </form>
+    </main>
+    </body>
+</html>
